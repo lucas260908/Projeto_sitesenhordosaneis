@@ -8,7 +8,7 @@
 </head>
 <body> 
         <h1 id="titulo_principal">O Senhor dos Anéis</h1>
-        <h2 class="titulo_secundario">Uma das trilogias mais famosas do cinema</h2>
+        <h2 class="titulo_secundario">Uma das trilogias mais famosas do cinema<wbr></h2>
         <nav> 
             <a href="index.html">Home</a>
             <a href="Sinopce.html">Sinopse</a>
@@ -47,6 +47,7 @@
         <input type="cor" id="cor" name="cor" placeholder="Escolha sua Cor">
         <br><br>
     <fieldset>
+        <legend>Indique a data</legend>
         <label for="data" Informe a data>Informe a data</label>
         <input type="data" name="data" id="data" placeholder="Informe a data">
         <br><br>
@@ -74,6 +75,7 @@
         <br><br>
 
         <fieldset>
+        <legend>Escolha o filme</legend>
         <label for="filme1">
         <input type="radio" name="filme" id="filme1" value="Filme 1">Filme 1</label>
         <label for="filme2">
@@ -88,11 +90,56 @@
             <option selected value="filme 3">Filme 3</option>
         </select>
         <br><br>
+        <label for="nivel>"Escolha o nível></label>
+        <input type="range" max="10" min="1" id="nivel" name="nivel">
+        <br><br>
         <button for="submit">Enviar:</button>
         </select>
         <br><br>
+        <select id="lista_suspensa" name="lista">
+            <strong><optgroup label="Teste de legendas no combobox"></strong>
+                <option value="Teste 1">Teste 1</option>
+                <option value="Teste 2">Teste 2</option>
+                <option value="Teste 3">Teste 3</option>
+            </optgroup>
+            <strong><optgroup label="Teste de legenda no combobox 2"></strong>
+                <option value="Teste 4">Teste 4</option>
+                <option value="Teste 5">Teste 5</option>
+                <option value="Teste 6">Teste 6</option>
+            </optgroup>
+        </select>
+    <fieldset>
+        <legend>Desenvolvimento para Internet</legend>
+        <label><input type="checkbox" name="php" value="php">PHP</label>
+        <label><input type="checkbox" name="html" value="html">HMTL</label>
+        <label><input type="checkbox" name="css" value="css">CSS</label>
+        <label><input type="checkbox" name="js" value="JAVASCRIPT">JAVASCRIPT</label>
+    </fieldset>
+    <br><br>
+    <!--Datalist possíveis ganhadores da copa do mundo 26-->
+    <input type="text" id="busca_datalist" list="paises">
+        <datalist id="paises">
+            <option>Brasil</option>
+            <option>França</option>
+            <option>Argentina</option>
+            <option>Alemanha</option>
+            <option>Inglaterra</option>
+            <option>Espanha</option>
+        </datalist>
+        <br><br>
+        <audio controls muted loop>
+            <source src="audio/musica.mp3" type="audio/mp3">
+            Este Navegador não é compativel com o áudio!
+        </audio>
+        <br><br>
+        <video controls muted loop poster="img/senhordosaneis.png">
+            <source src="videos/videoteste.mp4" type="video/mp4">
+        </video>
+
+        <br><br><br><br><br><br>
         <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
+    </fieldset>
     </form>
 </body>
 </html>
