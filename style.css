@@ -1,4 +1,6 @@
-            #titulo_principal{
+           @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+           
+           #titulo_principal{
                 background-color: #8B6F1E;
                 color: white;
             }
@@ -7,10 +9,32 @@
                 background-color: #2F4F2F;
                 color: white;
             }
-            #layout{
-                display: flex;
-            }
+            
             
             .rodape{
                 text-align: center;
+            }
+
+            body{
+                background-color: rgb(0, 0, 0); /*Cor de fundo*/
+                color: rgb(255, 255, 255); /*Cor da fonte*/
+                font-family: Arial, Helvetica, sans-serif; /*Fonte do texto*/
+                font-size: 16px; /*Tamanho da fonte*/
+            }
+
+            #layout{
+                font-size: 1em; /*Herda o tamanho do pai (body) dele com um multiplicador*/
+                display: flex;
+                font-style: normal; /*Estilo da fonte: italic,normal e oblique*/
+                line-height: 25px; /*Espaçamento entre as linhas*/
+                font-weight: 400; /*negrito em css 100 a 900 bold e bolder*/
+                text-transform: none; /*Capitalização do texto: uppercase, lowercase e capitalize*/
+                text-decoration: none; /*Decoração do texto: underline, overline e line-through*/
+                word-spacing: normal; /*Espaçamento entre as palavras*/
+                letter-spacing: normal; /*Espaçamento entre as letras*/
+                text-indent: 20px; /*Recuo da primeira linha do parágrafo*/
+                text-align: normal; /*Alinhamento do texto: left, right, center e justify*/ 
+            }
+            nav a{
+                text-decoration: none;
             }
