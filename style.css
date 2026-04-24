@@ -25,6 +25,7 @@
             #layout{
                 font-size: 1em; /*Herda o tamanho do pai (body) dele com um multiplicador*/
                 display: flex;
+                flex-direction: column;
                 font-style: normal; /*Estilo da fonte: italic,normal e oblique*/
                 line-height: 25px; /*Espaçamento entre as linhas*/
                 font-weight: 400; /*negrito em css 100 a 900 bold e bolder*/
@@ -34,7 +35,21 @@
                 letter-spacing: normal; /*Espaçamento entre as letras*/
                 text-indent: 20px; /*Recuo da primeira linha do parágrafo*/
                 text-align: normal; /*Alinhamento do texto: left, right, center e justify*/ 
+
+                /*border-style: dashed; /*Estilo da borda: solid, dashed, dotted, double, groove, ridge, inset e outset
+                border-width: 10px; /*Largura da borda: thin, medium, thick ou um valor em px, em, rem, %
+                border-color: #294b29;*/
+                border: dashed 5px  #2F4F2F;
+                /* border-top, border-bottom, border-left, border-right, border-left muda as configurações da borda de cima, de baixo, da esquerda e da direita */
+                border-radius: 50px; /*Arredondar cantos das borda*/
+                margin: 20px; /*Margem fora da borda*/
+                padding: 20px; /*Margem dentro da borda*/
             }
             nav a{
                 text-decoration: none;
-            }
+             /*}
+            .teste_display{
+                background-color: orange;
+                display: inline-block;
+                height: 200px; 
+            }*/
