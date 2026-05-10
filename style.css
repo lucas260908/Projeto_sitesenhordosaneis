@@ -10,7 +10,6 @@
                 color: white;
             }
             
-            
             .rodape{
                 text-align: center;
             }
@@ -51,5 +50,22 @@
             .teste_display{
                 background-color: orange;
                 display: inline-block;
-                height: 200px; 
-            }*/
+                height: 200px; */ 
+            }
+
+            #teste_estilo_listau_ul{
+                list-style-type: square;
+            }
+
+            #teste_estilo_listau_ol{
+                list-style-image: url('seta_direita_vermelha.png');
+            }
+
+            li{
+             border: solid 3px orange;
+             list-style-position: outside; /*Posição do marcador da lista: inside e outside*/
+            }
+            
+            #impacto{
+                background-image:;
+            }
