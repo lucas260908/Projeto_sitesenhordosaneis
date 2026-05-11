@@ -1,71 +1,125 @@
-           @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-           
-           #titulo_principal{
-                background-color: #8B6F1E;
-                color: white;
-            }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+#titulo_principal{
+            background-color: #32da1c;
+            color:white;
+ }
+.titulo_secundario{
+             background-color: #1a7e2b;
+             color: white;
+}             
+.rodape{
+    text-align: center;
+}
+body{
+    /*Topografia CSS*/
+    background-color: rgb(0,0,0); /*Cor de fundo*/
+    color: rgb(255, 238, 0); /*Cor da fonte*/
+    font-family: "Roboto", sans-serif; /*Fonte do texto*/
+    font-size: 16px ; /*Tamanho da fonte - px/em/rem*/
+}
+#layout{
+    font-size: 1em; /*Herda o tamanho do pai dele com um multiplicador*/
+    display: flex;
+    flex-direction: column; /*Usado para definir a direção dos elementos que sao filhos de um diplay flex*/
+    font-style: normal; /*Estilo da fonte: italic - normal - oblique*/
+    line-height: 25px; /*Espaçamento de linhas*/
+    font-weight: 400; /*Negrito em CSS 100 a 900 - bold e bolder*/
+    text-transform: none; /*Capitalização do texto upercase, lowecase e captalize*/
+    text-decoration: none; /*Sublinhado de texto: under e overline-double-dashed-dotted-wavy-none*/
+    word-spacing: 5px; /*Espacamento entre palavras*/
+    letter-spacing: none; /*Espacmento entre letras*/
+    text-indent: 20px; /*Espacamento de paragrafo primeira linha*/
+    text-align: justify; /*Alinhamento do texto: left-right-center-justify*/
+    border-style: dashed; /*Estilo da borda inset, solid, dashed, dotted, groove, ridge, outset*/
+    border-width: 5px; /*Espessura da borda*/
+    border-color: rgb(3, 252, 207);
+    border: dashed 5px rgb(3, 252, 207); /*Definir estilo espessura e cor da borda numa mesma linha*/
+    border-top: dotted 10px rgb(100,200,53); /*estiliza determinado canto das bordas*/
+    border-bottom: dotted 10px rgb(170,130,83);
+    border-left: dashed 10px rgb(150,80,13);
+    border-right: solid 10px rgb(200,200,53);
+    border-radius: 50px 50px 50px 50px; /*Arredondar cantos da borda px ,% */
+    margin: 20px; /*margem do lado de fora da borda*/
+    margin-right: 20px; /*margem do lado de fora da borda*/
+    margin-left: 20px; /*margem do lado de fora da borda*/
+    margin-top: 20px; /*margem do lado de fora da borda*/
+    margin-bottom: auto; /*margem do lado de fora da borda*/
+    padding: 20px; /*Margem dentro da borda*/
+    padding-bottom: 20px; /*Margem dentro da borda*/
+    padding-left: 20px; /*Margem dentro da borda*/
+    padding-right: 20px; /*Margem dentro da borda*/
+    padding-top: 20px; /*Margem dentro da borda*/
+}
 
-            .titulo_secundario{
-                background-color: #2F4F2F;
-                color: white;
-            }
-            
-            .rodape{
-                text-align: center;
-            }
+nav a{
+    text-decoration: none;
+}
 
-            body{
-                background-color: rgb(0, 0, 0); /*Cor de fundo*/
-                color: rgb(255, 255, 255); /*Cor da fonte*/
-                font-family: Arial, Helvetica, sans-serif; /*Fonte do texto*/
-                font-size: 16px; /*Tamanho da fonte*/
-            }
 
-            #layout{
-                font-size: 1em; /*Herda o tamanho do pai (body) dele com um multiplicador*/
-                display: flex;
-                flex-direction: column;
-                font-style: normal; /*Estilo da fonte: italic,normal e oblique*/
-                line-height: 25px; /*Espaçamento entre as linhas*/
-                font-weight: 400; /*negrito em css 100 a 900 bold e bolder*/
-                text-transform: none; /*Capitalização do texto: uppercase, lowercase e capitalize*/
-                text-decoration: none; /*Decoração do texto: underline, overline e line-through*/
-                word-spacing: normal; /*Espaçamento entre as palavras*/
-                letter-spacing: normal; /*Espaçamento entre as letras*/
-                text-indent: 20px; /*Recuo da primeira linha do parágrafo*/
-                text-align: normal; /*Alinhamento do texto: left, right, center e justify*/ 
+#teste_estilo_lista_ul{
+    list-style-type: circle; /*define o estilo de marcador da lista nao ordenada(ul): disc, circle, square, none*/
 
-                /*border-style: dashed; /*Estilo da borda: solid, dashed, dotted, double, groove, ridge, inset e outset
-                border-width: 10px; /*Largura da borda: thin, medium, thick ou um valor em px, em, rem, %
-                border-color: #294b29;*/
-                border: dashed 5px  #2F4F2F;
-                /* border-top, border-bottom, border-left, border-right, border-left muda as configurações da borda de cima, de baixo, da esquerda e da direita */
-                border-radius: 50px; /*Arredondar cantos das borda*/
-                margin: 20px; /*Margem fora da borda*/
-                padding: 20px; /*Margem dentro da borda*/
-            }
-            nav a{
-                text-decoration: none;
-             /*}
-            .teste_display{
-                background-color: orange;
-                display: inline-block;
-                height: 200px; */ 
-            }
+}
 
-            #teste_estilo_listau_ul{
-                list-style-type: square;
-            }
+#teste_estilo_lista_ol{
+    list-style-type: decimal; /*define o estilo de marcadores de listas ordenadas: decimal, (upper)lower-roman, greek, alpha*/
+    list-style-image: url('img/seta_direita_vermelha.png'); /*define uma imagem como marcador da lista*/
+}
 
-            #teste_estilo_listau_ol{
-                list-style-image: url('seta_direita_vermelha.png');
-            }
+li{
+    border: solid 3px orange;
+    list-style-position: outside; /*Dizer ao navegador se o marcador da lista faz parte ou nao do texto da lista: insede e outside*/
+    
 
-            li{
-             border: solid 3px orange;
-             list-style-position: outside; /*Posição do marcador da lista: inside e outside*/
-            }
-            
-            #impacto{
-                background-image:;
-            }
+}
+
+#impacto{
+    background: url('img/senhordosaneis_fundo.jpg');
+    background-image: url('img/senhordosaneis_fundo.jpg'); /* cArrega imagem ao fundo do elemento html*/
+    background-repeat: no-repeat; /*configura a forma como a imagem ira repetir ao fundo do elemento html: repeat(y,x), no-reapet*/
+    background-position: center; /*left, right, top, bottom podendo usar dois ao mesmo tempo*/
+    width: 2000px;
+    height: 1500px;
+    background-size: cover; /*serve para definir como a imagem vai ser exibida ao fundo- contain, cover, px, %, auto*/
+    background-attachment: fixed; /*como a imagem vai lidar com o scroll ao fundo do elemento, scroll e fixed*/
+    text-shadow:none; /*define a sombra do texto*/
+    
+
+}
+
+/*.teste_display{
+    background-color: rgb(255, 9, 202);
+    display: inline-block;
+    width: 500px;}*/
+
+.noticia{
+    border: solid 3px wheat;
+    width: 200px;
+    position: fixed; /*define o posicionamento atras ou na frente dos elementos html: fixed, relative, absolute, static*/
+    height: 100px;
+    overflow: visible; /* trata o comportamento de quando por exemplo um texto passa das bordas de um elemento html- visible, hiden , scrol*/
+    box-shadow: 3px 3px 3px red; /*define a sombra de um elemento html de bloco*/
+    
+
+}
+
+.um{
+    background-color: red;
+    top: 0px;
+    left: 50px;
+    z-index: 3; /*define a ordem dos elementos um atras do outro*/
+   
+
+}
+.dois{
+    background-color: green;
+    top: 100px;
+    left: 150px;
+    
+}
+.tres{
+    background-color: blue;
+    top: 200px;
+    left: 250px;
+    
+}
